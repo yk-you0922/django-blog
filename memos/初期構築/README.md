@@ -94,15 +94,23 @@ DATABASES = {
 ├── Dockerfile
 ├── README.md
 ├── blog
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
+│   ├── __init__.py # blogディレクトリがPythonパッケージであることを周知するためのファイル
+│   ├── asgi.py # プロジェクトを実行するためのASGI互換Webサーバーとのエントリーポイント
+│   ├── settings.py # Djangoプロジェクトの設定ファイル
+│   ├── urls.py # プロジェクトのURL宣言、ルーティング関連
+│   └── wsgi.py # プロジェクトを実行するためのWSGI互換Webサーバーとのエントリーポイント
 ├── docker
 │   └── db
 │       └── data
 ├── docker-compose.yml
-├── manage.py
-└── requirements.txt
+├── manage.py # プロジェクトの操作を行うCLIユーティリティ
+└── requirements.txt # プロジェクトで利用するライブラリの設定記述ファイル
 ```
+
+ファイル関連リンク集
+- manage.py https://docs.djangoproject.com/ja/5.1/ref/django-admin/
+- __init__.py
+- settings.py https://docs.djangoproject.com/ja/5.1/topics/settings/
+- urls.py https://docs.djangoproject.com/ja/5.1/topics/http/urls/
+- asgi.py https://docs.djangoproject.com/ja/5.1/howto/deployment/asgi/
+- wsgi.py https://docs.djangoproject.com/ja/5.1/howto/deployment/wsgi/
