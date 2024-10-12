@@ -8,7 +8,21 @@
       "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
-      "ms-python.python"
+        "ms-python.python",
+        "thebarkman.vscode-djaneiro",
+        "ecmel.vscode-html-css",
+        "batisteo.vscode-django",
+        "formulahendry.auto-rename-tag",
+        "ionutvmi.path-autocomplete",
+        "ms-python.black-formatter",
+        "shardulm94.trailing-spaces",
+        "KevinRose.vsc-python-indent",
+        "mrmlnc.vscode-csscomb",
+        "smelukov.vscode-csstree",
+        "streetsidesoftware.code-spell-checker",
+        "oderwat.indent-rainbow",
+        "mosapride.zenkaku",
+        "vscode-icons-team.vscode-icons"
     ],
     "forwardPorts": [
       8000

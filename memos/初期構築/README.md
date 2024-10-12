@@ -1,13 +1,26 @@
 # プロジェクト作成
 
 ## 初期構築コマンド
+
+### プロジェクト作成コマンド
+
 コマンド
 
 ```bash
-$ docker compose run web django-admin startproject blog .
+$ docker compose run web django-admin startproject config .
 ```
 
-お試し起動
+プロジェクト全体の設定などを `config` ディレクトリにまとめるようにプロジェクト作成
+
+### プロジェクト内部にアプリケーションを作成
+
+Djangoはプロジェクトの内部に多数のアプリケーションを保持する形の構造となっている。
+
+```bash
+$ docker compose run web python manage.py startapp blog
+```
+
+### お試し起動
 
 ```bash
 $ docker compose up -d
@@ -93,8 +106,8 @@ DATABASES = {
 .
 ├── Dockerfile
 ├── README.md
-├── blog
-│   ├── __init__.py # blogディレクトリがPythonパッケージであることを周知するためのファイル
+├── config
+│   ├── __init__.py # __init__.pyを含めたディレクトリがPythonパッケージであることを認識できる
 │   ├── asgi.py # プロジェクトを実行するためのASGI互換Webサーバーとのエントリーポイント
 │   ├── settings.py # Djangoプロジェクトの設定ファイル
 │   ├── urls.py # プロジェクトのURL宣言、ルーティング関連
