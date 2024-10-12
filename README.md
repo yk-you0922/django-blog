@@ -9,19 +9,8 @@
 - django5.0
 - mysql8.0
 
-## プロジェクト作成
+## ローカル開発
 
-コマンド
+ローカルでの開発は基本的にWSL+docker-compose.yml+VSCodeで実施します。
 
-```bash
-$ docker compose run web django-admin startproject blog .
-```
-
-お試し起動
-
-```bash
-$ docker compose up -d
-```
-
-ローカルアクセス
-http://localhost:8000
+そのため、開発コンテナーにアクセスするために `.vscode` ディレクトリを含めています。
